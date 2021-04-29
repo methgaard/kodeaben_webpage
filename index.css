@@ -1,17 +1,28 @@
 body{
     font-family: Microsoft Yi Baiti;
     src: url(msyi.ttf);
+    background-color: grey;
+
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .page_title
 {
-    font-size: 100px;
+    font-size: 150px;
+}
+
+.gutter{
+    flex-grow: 1;
 }
 
 .page_container {
-    background-color: grey;
     width: 100%;
-    height: 100%;
+    height: 80%;
+    min-width: 1600px;
     
     display: flex;
     flex-direction: column;
@@ -20,17 +31,16 @@ body{
 }
 
 .logo{
-    width:45%;
-    height: auto;
+    height: 90%;
 }
+
 .info_bar{
     background-color: #DDC2DE;
-    width:  45%;
-    border-radius: 5%;
-
-
+    width:  60%;
+    max-width: 922;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: nowrap;
 }
